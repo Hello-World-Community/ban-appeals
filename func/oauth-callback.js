@@ -57,7 +57,7 @@ export async function handler(event, context) {
                 return {
                     statusCode: 303,
                     headers: {
-                        "Location": `/error?msg=${encodeURIComponent("You cannot submit ban appeals with this Discord account.")}`,
+                        "Location": `/error?msg=${encodeURIComponent("This account is not allowed to appeal their ban. This is usually because you broke a serious rule or spammed the form.")}`,
                     },
                 };
             }
